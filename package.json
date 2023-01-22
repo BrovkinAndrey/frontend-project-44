@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/BrovkinAndrey/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/BrovkinAndrey/frontend-project-44#readme"
+  "homepage": "https://github.com/BrovkinAndrey/frontend-project-44#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
 }
