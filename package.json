@@ -1,0 +1,20 @@
+{
+  "name": "frontend-project-44",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Brain Games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrovkinAndrey/frontend-project-44.git"
+  },
+  "author": "Andray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrovkinAndrey/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/BrovkinAndrey/frontend-project-44#readme"
+}
