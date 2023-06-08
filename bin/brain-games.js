@@ -1,21 +1,19 @@
-/* eslint-disable no-restricted-globals */
-/* eslint-disable no-alert */
-/* eslint-disable no-undef */
-const greeting = 'Welcome to the Brain Games!';
-alert(greeting);
-document.getElementById('header').innerHTML = greeting;
+/* eslint-disable no-console */
+/* eslint-disable import/no-extraneous-dependencies */
+// import countGreatestCommonDivisor from './brain-gcd';
+import PromptSync from 'prompt-sync';
 
-const askName = 'May I have your name?';
-const namePlayer = prompt(askName);
-const greetingWithName = `Hello, ${namePlayer}`;
-alert(greetingWithName);
-document.getElementById('name').innerHTML = greetingWithName;
+const prompt = PromptSync({ sigint: true });
 
-// const play = confirm('Do you want to play?');
-const play = confirm(`${namePlayer}, do you want to play?`);
+export default function welcomeGreeting() {
+  const greeting = 'Welcome to the Brain Games!';
+  console.log(greeting);
 
-if (play) {
-  // something code
-} else {
-  alert('That so sad (;');
+  const askName = 'May I have your name? ';
+  const namePlayer = prompt(askName);
+  const greetingWithName = `Hello, ${namePlayer}!`;
+  console.log(greetingWithName);
+  return namePlayer;
 }
+
+// welcomeGreeting();
