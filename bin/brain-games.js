@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 /* eslint-disable import/no-extraneous-dependencies */
-// import countGreatestCommonDivisor from './brain-gcd';
 import PromptSync from 'prompt-sync';
 
 const prompt = PromptSync({ sigint: true });

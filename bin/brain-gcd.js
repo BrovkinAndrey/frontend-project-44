@@ -1,8 +1,6 @@
 /* eslint-disable no-console */
-/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/extensions */
-/* eslint-disable no-undef */
-/* eslint-disable no-alert */
+/* eslint-disable import/no-extraneous-dependencies */
 import PromptSync from 'prompt-sync';
 import game from './brain-games.js';
 
@@ -22,8 +20,8 @@ function countGreatestCommonDivisor(num1, num2) {
 }
 
 function round() {
-  const num1 = Math.round(Math.random() * 20) + 1;
-  const num2 = Math.round(Math.random() * 20) + 1;
+  const num1 = Math.floor(Math.random() * 20) + 1;
+  const num2 = Math.floor(Math.random() * 20) + 1;
   const answer = countGreatestCommonDivisor(num1, num2);
   console.log(`Question: ${num1} ${num2}`);
   const userAnswer = +prompt('Your asnwer: ');
