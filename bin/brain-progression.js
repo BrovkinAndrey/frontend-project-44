@@ -8,8 +8,14 @@ const prompt = PromptSync({ sigint: true });
 function getProgression() {
   const step = Math.floor(Math.random() * 10) + 1;
   const missIdx = Math.floor(Math.random() * 8);
+  const startProgressionIdx = Math.floor(Math.random() * 10) + 1;
+  const lengthProgression = 4 + Math.floor(Math.random() * 6);
   const progression = [];
-  for (let i = 1; i <= 8; i += 1) {
+  for (
+    let i = startProgressionIdx;
+    i <= startProgressionIdx + lengthProgression;
+    i += 1
+  ) {
     progression.push(i * step);
   }
   const missNum = progression[missIdx];
