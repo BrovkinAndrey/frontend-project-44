@@ -2,7 +2,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-extraneous-dependencies */
 import PromptSync from 'prompt-sync';
-import game from './brain-games.js';
+// import game from './brain-games.js';
 
 const prompt = PromptSync({ sigint: true });
 
@@ -19,14 +19,14 @@ function countGreatestCommonDivisor(num1, num2) {
   return smaller;
 }
 
-function round() {
+export default function roundGCD() {
   const num1 = Math.floor(Math.random() * 20) + 1;
   const num2 = Math.floor(Math.random() * 20) + 1;
   const answer = countGreatestCommonDivisor(num1, num2);
   console.log(`Question: ${num1} ${num2}`);
-  const userAnswer = +prompt('Your asnwer: ');
+  const userAnswer = prompt('Your asnwer: ');
 
-  return answer === userAnswer;
+  return answer === +userAnswer;
 }
 
-game('Find the greatest common divisor of given numbers.', round);
+// game('Find the greatest common divisor of given numbers.', roundGCD);

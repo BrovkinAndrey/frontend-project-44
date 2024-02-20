@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable no-console */
 import PromptSync from 'prompt-sync';
-import game from './brain-games.js';
+// import game from './brain-games.js';
 
 const prompt = PromptSync({ sigint: true });
 
@@ -23,11 +23,11 @@ function getProgression() {
   return [missNum, progression.join(' ')];
 }
 
-function round() {
+export default function roundProgression() {
   const [answer, question] = getProgression();
   console.log(`Question: ${question}`);
   const userAnswer = +prompt('Your asnwer: ');
   return answer === userAnswer;
 }
 
-game('What number is missing in this progression?', round);
+// game('What number is missing in this progression?', roundProgression);
