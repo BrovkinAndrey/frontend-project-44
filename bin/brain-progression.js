@@ -9,7 +9,11 @@ function getProgression() {
   const step = Math.floor(Math.random() * 10) + 1;
   const missIdx = Math.floor(Math.random() * 8);
   const startProgressionIdx = Math.floor(Math.random() * 10) + 1;
-  const lengthProgression = 4 + Math.floor(Math.random() * 6);
+  let lengthProgression = 4 + Math.floor(Math.random() * 6);
+  if (lengthProgression < missIdx) {
+    lengthProgression = missIdx;
+  }
+  console.log(step, missIdx, startProgressionIdx, lengthProgression);
   const progression = [];
   for (
     let i = startProgressionIdx;
