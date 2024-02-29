@@ -13,7 +13,6 @@ function getProgression() {
   if (lengthProgression < missIdx) {
     lengthProgression = missIdx;
   }
-  console.log(step, missIdx, startProgressionIdx, lengthProgression);
   const progression = [];
   for (
     let i = startProgressionIdx;

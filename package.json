@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Brain Games",
-  "main": "index.html",
+  "main": "bin/brain-games.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brainGames": "./bin/brain-games.js"
   },
   "repository": {
     "type": "git",
